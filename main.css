@@ -1,0 +1,183 @@
+body {
+	background-repeat: no-repeat;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+/* Navigation */
+
+.logo {
+	max-width: 4rem;
+}
+
+.main_nav {
+	display: inline-block;
+	text-decoration: none;
+	list-style-type: none;
+	color: #336699;
+	padding: 1rem;
+	margin: 0 auto;
+	top:0;
+	right: 0;
+	inset: 0 0 0 25%;
+}
+
+.main_menu {
+	display: inline-block;
+	text-decoration: none;
+	list-style-type: none;
+	color: #336699;
+	padding: 1rem;
+}
+
+header {
+	min-height: 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+/* Body */
+
+/* */
+.title_headlines {
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+}
+
+h1{
+	font-size: 25px;
+	color: #336699;
+	padding-right: 1rem;
+}
+
+.detail{
+	text-decoration-line: underline;
+	color: #336699;
+	padding-left: 1rem;
+}
+
+.decoration {
+	padding-left: 30rem;
+	padding-right: 29rem;
+	border-bottom: 2px solid grey;
+}
+
+/* Headline section */
+
+.headlines {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 2rem;
+	max-width: 70em;
+	}
+
+
+.headline_photo {
+max-width: 100%;
+max-height:23rem;
+background-repeat: no-repeat;
+background-size: contain;
+}
+
+.date {
+	display: flex;
+}
+
+.all-news{
+	display: flex;
+	flex-direction: column;
+	min-width: 30rem;
+	padding-left: 2rem;
+	border-left: 3px solid grey;
+}
+
+a {
+	color: #336699;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* Opinion section */
+
+.opinion {
+	padding: 2em;
+	margin: 0 auto;
+	max-width: 70em;
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+	align-items: baseline;
+	justify-content: center;
+}
+
+.section_opinion {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem;
+}
+
+.text_input_opinion {
+color:#336699;
+}
+
+h2{
+	color: #336699;
+}
+
+.img_opinion{
+	max-width: 20rem;
+	max-height: 20rem;
+}
+
+
+/* Footer*/
+footer {
+	padding: 2em;
+	margin: 0 auto;
+	max-width: 70em;
+	display: flex;
+	flex-direction: row;
+	gap: 10rem;
+}
+
+.logo_footer{
+	max-width: 4rem;
+}
+
+@media (max-width:50em) {
+	footer {
+		display: block;
+	}
+}
+
+@media (max-width:66em) {
+	.opinion {
+		display: block;
+	}
+}
+
+@media (max-width:70em) {
+	.headlines {
+		display: block;
+	}
+}
+
+@media (max-width:35em) {
+	nav{
+		position: fixed;
+		inset: 0 0 0 30%;
+		flex-direction: column;
+		padding: min(20vh, 10rem) 2rem;
+		background: hsla(0, 5%, 100%, 0.5);
+		backdrop-filter: blur(1rem);
+		--gap: 3em;
+	}
+
+}
+
+
+
+

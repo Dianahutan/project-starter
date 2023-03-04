@@ -1,1 +1,10 @@
-/* This is your custom CSS file */
+nav ul {
+	position:fixed;
+	flex-direction: row;
+	color: aqua;
+}
+
+.menu {
+	position: absolute;
+	flex-direction: row;
+}
