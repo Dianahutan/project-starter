@@ -6,22 +6,27 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./main.css">
+	<script src="index.js" defer></script>
 	<title>Live News</title>
 </head>
 
 <body>
 	<header>
-		<img class="logo" src="./assets/logo.jpg" alt="Logo">
+		<img class="logo" src="./assets/logo_transparent.png" alt="Logo">
+
 		<nav>
-			<ul>
-				<li class="main_nav">News</li>
-				<li class="main_nav">Opinion</li>
-				<li class="main_nav">Sport</li>
-				<li class="main_nav">Culture</li>
-				<li class="main_nav">Lifestyle</li>
-				<li class="main_nav">More</li>
+			<button class="mobile_nav" aria-controls="primary_nav" aria-expanded="false"> <span class=" sr-only"> Menu </span></button>
+
+			<ul id="primary_nav" data-visible="false" class="primary_nav">
+				<li class="active"> <a href="#">News </a> </li>
+				<li class="nav_item"> <a href="#">Opinion </a></li>
+				<li class="nav_item"> <a href="#">Sport </a></li>
+				<li class="nav_item"> <a href="#">Culture </a></li>
+				<li class="nav_item"> <a href="#">Lifestyle </a></li>
+				<li class="nav_item"> <a href="#">More </a></li>
 			</ul>
 		</nav>
+
 
 		<div class="menu">
 			<ul>
@@ -39,8 +44,7 @@
 
 	<div class="headlines">
 
-	 <img class="headline_photo" src="./assets/headlines2.jpg"
-		alt="Headlines">
+		<img class="headline_photo" src="./assets/headlines2.jpg" alt="Headlines">
 
 
 		<div class="all-news">
@@ -59,36 +63,46 @@
 	<div class="opinion">
 
 		<div class="section_opinion">
-		<img class="img_opinion" src="./assets/opinion_1.jpg" alt="">
-		<h2>Is the Global South paying for Germany's energy transition?</h2>
-		<div class="text_input_opinion">Germany needs to decarbonize its industry. It is betting on green hydrogen, imported from countries with huge potential for renewable energies. But critics say Germany is going green at the expense of the Global South.</div>
-		<div class=""></div>
+			<img class="img_opinion" src="./assets/opinion_1.jpg" alt="">
+			<h2>Is the Global South paying for Germany's energy transition?</h2>
+			<div class="text_input_opinion">Germany needs to decarbonize its industry. It is betting on green hydrogen,
+				imported from countries with huge potential for renewable energies. But critics say Germany is going green at
+				the expense of the Global South.</div>
+			<div class=""></div>
 		</div>
 
 		<div class="section_opinion">
-		<img class="img_opinion" src="./assets/opinion_2.jpg" alt="">
-		<h2>Colon cancer rising among young people</h2>
-		<div class="text_input_opinion">Colon cancer is generally thought to be a problem that affects older people. But doctors are observing a steady increase in the number of cases among young adults. What's driving that trend?</div>
-		<div class=""></div>
-		</div>
-
-		<div class="section_opinion">
-		<img class="img_opinion" src="./assets/opinion_3.jpg" alt="">
-		<h2>How China's AI is automating the legal system</h2>
-		<div class="text_input_opinion">In China, many legal matters are in the hands of artificial intelligence. Although it streamlines the process for small claims and misdemeanors, there are concerns about automating complicated cases.</div>
-		<div class=""></div>
+			<img class="img_opinion" src="./assets/opinion_2.jpg" alt="">
+			<h2>Colon cancer rising among young people</h2>
+			<div class="text_input_opinion">Colon cancer is generally thought to be a problem that affects older people. But
+				doctors are observing a steady increase in the number of cases among young adults. What's driving that trend?
 			</div>
+			<div class=""></div>
+		</div>
+
+		<div class="section_opinion">
+			<img class="img_opinion" src="./assets/opinion_3.jpg" alt="">
+			<h2>How China's AI is automating the legal system</h2>
+			<div class="text_input_opinion">In China, many legal matters are in the hands of artificial intelligence. Although
+				it streamlines the process for small claims and misdemeanors, there are concerns about automating complicated
+				cases.</div>
+			<div class=""></div>
+		</div>
 	</div>
 
 	<footer>
 
-		<img class="logo_footer" src="./assets/logo.jpg" alt="Logo">
+		<img class="logo_footer" src="./assets/logo_transparent.png" alt="Logo">
 
-		<div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis doloremque fuga eligendi vero explicabo dolorem officiis officia vel quas. Repellat earum tempore enim ipsam consectetur sunt! Culpa qui provident quam.</div>
+		<div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis doloremque fuga eligendi vero explicabo dolorem
+			officiis officia vel quas. Repellat earum tempore enim ipsam consectetur sunt! Culpa qui provident quam.</div>
 
-		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita mollitia totam praesentium assumenda maxime explicabo nobis facere voluptates! Rerum velit nisi obcaecati blanditiis quidem cupiditate consequatur inventore corrupti exercitationem.</div>
+		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita mollitia totam praesentium assumenda
+			maxime explicabo nobis facere voluptates! Rerum velit nisi obcaecati blanditiis quidem cupiditate consequatur
+			inventore corrupti exercitationem.</div>
 
-		</footer>
+	</footer>
+
 </body>
 
 </html>
