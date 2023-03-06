@@ -40,6 +40,11 @@ header {
 
 /* Body */
 
+.headlines_section {
+
+
+}
+
 .headlines {
 	display: flex;
 	justify-content: center;
@@ -172,7 +177,7 @@ footer {
 		transform: translateX(100%);
 	}
 
-	.primary_nav [data-visible="false"] {
+	.primary_nav[data-visible="false"] {
 		transform: translateX(0%);
 	}
 
