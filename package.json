@@ -1,5 +1,23 @@
 {
+  "name": "project-starter",
+  "version": "1.0.0",
+  "description": "This repo is intended for having a fork starting point to create a web project.\r It includes a few common setup files and folders.",
+  "main": "index.js",
   "dependencies": {
     "bootstrap": "^5.2.3"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dianahutan/project-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dianahutan/project-starter/issues"
+  },
+  "homepage": "https://github.com/Dianahutan/project-starter#readme"
 }
