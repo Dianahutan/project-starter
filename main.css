@@ -171,11 +171,25 @@ footer {
 			background: hsla(0, 5%, 100%, 0.5);
 			backdrop-filter: blur(1rem);
 			--gap: 3em;
+
+		}
+
+		/*.primary_nav [data-visible="true"] {
 			transform: translateX(0%);
 		}
 
-		.primary_nav [data-visible="true"] {
-			transform: translateX(50%);
+		.primary_nav [data-visible="false"] {
+			transform: translateX(0%);
+		}*/
+
+		.primary_nav{
+			display: none;
+
+		}
+
+		.primary_nav.active {
+			display: flex;
+
 		}
 
 		.mobile_nav {
