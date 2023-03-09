@@ -1,12 +1,15 @@
-body {
-	background-repeat: no-repeat;
-	font-family:
-		overflow-x: hidden;
+:root {
+	--padding: 2rem;
+	--textColor: #336699;
 }
 
+body {
+	background-repeat: no-repeat;
+	font-family;
+	overflow-x: hidden;
+}
 
-
-.background {}
+/*Navigation*/
 
 .logo {
 	max-width: 8rem;
@@ -17,7 +20,7 @@ body {
 	gap: 1rem;
 	text-decoration: none;
 	list-style-type: none;
-	color: #336699;
+	color: var(--textColor);
 	padding: 1rem;
 	margin: 0 auto;
 	top: 0;
@@ -29,7 +32,7 @@ body {
 	display: inline-block;
 	text-decoration: none;
 	list-style-type: none;
-	color: #336699;
+	color: var(--textColor);
 	padding: 1rem;
 }
 
@@ -52,12 +55,13 @@ header {
 	display: flex;
 	justify-content: center;
 	margin: 0 auto;
-	padding: 2rem;
+	padding: var(--padding);
 	max-width: 70em;
 }
 
 h1 {
 	margin: 2rem;
+	color: var(--textColor);
 }
 
 .detail {
@@ -86,25 +90,26 @@ h1 {
 	flex-direction: column;
 	max-width: 30rem;
 	margin-left: 4rem;
-	padding: 2rem;
+	padding: var(--padding);
 	border-left: 3px solid grey;
 }
 
 a {
-	color: #336699;
+	color: var(--textColor);
 	text-decoration: none;
 	font-weight: bold;
 }
 
 .opinion {
-	padding: 2em;
-	margin: 0 auto;
-	max-width: 70em;
 	display: flex;
 	flex-direction: row;
-	gap: 2rem;
 	align-items: baseline;
 	justify-content: center;
+	padding: var(--padding);
+	margin: 0 auto;
+	max-width: 70em;
+	gap: 2rem;
+
 }
 
 .opinion_section {
@@ -115,11 +120,11 @@ a {
 }
 
 .text_input_opinion {
-	color: #336699;
+	color: var(--textColor);
 }
 
 h2 {
-	color: #336699;
+	color: var(--textColor);
 }
 
 .img_opinion {
@@ -128,13 +133,13 @@ h2 {
 }
 
 /* Sport section */
-.img_sport{
+.img_sport {
 	max-width: 25rem;
 }
 
-.sport_section{
+.sport_section {
 	max-width: 70rem;
-	padding: 2rem;
+	padding: ;
 	margin: 0 auto;
 }
 
@@ -150,13 +155,13 @@ h2 {
 	gap: 4rem;
 }
 
-.sport_news{
+.sport_news {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
 }
 
-.text_input_opinion{
+.text_input_opinion {
 	color: #336699;
 	font-weight: bold;
 }
@@ -196,12 +201,12 @@ h2 {
 footer {
 	display: flex;
 	flex-direction: row;
-	justify-content:flex-start;
+	justify-content: flex-start;
 	padding-right: 2rem;
 	margin: 0 auto;
 	max-width: 65rem;
 	gap: 15rem;
-	color: #336699;
+	color: var(--textColor);
 	font-size: small;
 	font-weight: bold;
 }
@@ -255,68 +260,69 @@ footer {
 
 @media (max-width:50em) {
 	footer {
-		display:flex;
+		display: flex;
 		flex-wrap: nowrap;
 		gap: 3rem;
-}
-
-@media (max-width:66em) {
-	.opinion {
-		display: block;
 	}
 
-	.sign_up-section {
-		display: block;
-	}
-	.copyright {
-		display: block;
+	@media (max-width:66em) {
+		.opinion {
+			display: block;
+		}
+
+		.sign_up-section {
+			display: block;
+		}
+
+		.copyright {
+			display: block;
+		}
+
+		.headlines {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+		}
+
+		.all-news {
+			border: 0;
+		}
 	}
 
-	.headlines {
-		display: flex;
-		flex-direction: column;
-		gap: 1rem;
-	}
+	@media (max-width:35em) {
+		.primary_nav {
+			position: fixed;
+			display: flex;
+			flex-direction: column;
+			z-index: 1000;
+			inset: 0 0 0 30%;
+			padding: min(20vh, 10rem) 2rem;
+			background: hsla(0, 5%, 100%, 0.5);
+			backdrop-filter: blur(1rem);
+			--gap: 3em;
+			transform: translateX(100%);
+		}
 
-	.all-news {
-		border: 0;
-	}
-}
+		.primary_nav[data-visible="false"] {
+			transform: translateX(0%);
+		}
 
-@media (max-width:35em) {
-	.primary_nav {
-		position: fixed;
-		display: flex;
-		flex-direction: column;
-		z-index: 1000;
-		inset: 0 0 0 30%;
-		padding: min(20vh, 10rem) 2rem;
-		background: hsla(0, 5%, 100%, 0.5);
-		backdrop-filter: blur(1rem);
-		--gap: 3em;
-		transform: translateX(100%);
-	}
+		.mobile_nav {
+			position: absolute;
+			display: block;
+			z-index: 9999;
+			background: url("./../assets/hamburger_icon.svg.png");
+			background-repeat: no-repeat;
+			background-size: contain;
+			border: 0;
+			width: 5rem;
+			aspect-ratio: 1;
+			width: 2rem;
+			top: 2rem;
+			right: 2rem;
+		}
 
-	.primary_nav[data-visible="false"] {
-		transform: translateX(0%);
+		.main_menu {
+			display: block;
+		}
 	}
-
-	.mobile_nav {
-		position: absolute;
-		display: block;
-		z-index: 9999;
-		background: url("./../assets/hamburger_icon.svg.png");
-		background-repeat: no-repeat;
-		background-size: contain;
-		border: 0;
-		width: 5rem;
-		aspect-ratio: 1;
-		width: 2rem;
-		top: 2rem;
-		right: 2rem;
-	}
-
-	.main_menu {
-		display: block;
-	}
-}
