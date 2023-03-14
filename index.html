@@ -5,104 +5,184 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./main.css">
+	<link rel="stylesheet" href="./css/main.css">
 	<script src="index.js" defer></script>
 	<title>Live News</title>
 </head>
 
 <body>
-	<header>
-		<img class="logo" src="./assets/logo_transparent.png" alt="Logo">
-
-		<nav>
-			<button onclick="toggleMenu()" class="mobile_nav" aria-controls="primary_nav" aria-expanded="false"> <span class=" sr-only"> Menu </span></button>
-
-			<ul id="primary_nav" data-visible="false" class="primary_nav">
-				<li class="active"> <a href="#">News </a> </li>
-				<li class="nav_item"> <a href="#">Opinion </a></li>
-				<li class="nav_item"> <a href="#">Sport </a></li>
-				<li class="nav_item"> <a href="#">Culture </a></li>
-				<li class="nav_item"> <a href="#">Lifestyle </a></li>
-				<li class="nav_item"> <a href="#">More </a></li>
-			</ul>
-		</nav>
-
-
-		<div class="menu">
-			<ul>
-				<li class="main_menu">EN</li>
-				<li class="main_menu">Account</li>
-			</ul>
-		</div>
-	</header>
-
-	<div class="title_headlines">
-		<h1>Headlines</h1>
-		<div class="decoration"> </div>
-		<div class="detail"> View all </div>
-	</div>
-
-	<div class="headlines">
-
-		<img class="headline_photo" src="./assets/headlines2.jpg" alt="Headlines">
-
-
-		<div class="all-news">
-
-			<a href="">The owner of the notorious Russian mercenary group says his forces have all but surrounded the eastern
-				Ukrainian city, but the defending troops are fighting on</a>
-			<p class="date"> 03/03/2023</p>
-			<a href="">The missing answers from a US agency's 'lab leak' assessment on Covid origins</a>
-			<p class="date"> 03/03/2023</p>
-			<a href="">Nobel laureate Ales Bialiatski sentenced to 10 years in prison by Belarusian court</a>
-			<p class="date"> 03/03/2023</p>
-
-		</div>
-	</div>
-
-	<div class="opinion">
-
-		<div class="section_opinion">
-			<img class="img_opinion" src="./assets/opinion_1.jpg" alt="">
-			<h2>Is the Global South paying for Germany's energy transition?</h2>
-			<div class="text_input_opinion">Germany needs to decarbonize its industry. It is betting on green hydrogen,
-				imported from countries with huge potential for renewable energies. But critics say Germany is going green at
-				the expense of the Global South.</div>
-			<div class=""></div>
-		</div>
-
-		<div class="section_opinion">
-			<img class="img_opinion" src="./assets/opinion_2.jpg" alt="">
-			<h2>Colon cancer rising among young people</h2>
-			<div class="text_input_opinion">Colon cancer is generally thought to be a problem that affects older people. But
-				doctors are observing a steady increase in the number of cases among young adults. What's driving that trend?
+	<div class="background">
+		<header>
+			<img class="logo" src="./assets/logo_transparent.png" alt="Logo">
+			<nav>
+				<button class="mobile_nav" aria-controls="primary_nav" aria-expanded="false"> <span class=" sr-only"> Menu
+					</span></button>
+				<ul id="primary_nav" data-visible="false" class="primary_nav">
+					<li class="active"> <a href="news.html">News </a> </li>
+					<li class="nav_item"> <a href="#">Opinion </a></li>
+					<li class="nav_item"> <a href="#">Sport </a></li>
+					<li class="nav_item"> <a href="#">Culture </a></li>
+					<li class="nav_item"> <a href="#">Lifestyle </a></li>
+					<li class="nav_item"> <a href="#">More </a></li>
+				</ul>
+			</nav>
+			<div class="menu">
+				<ul>
+					<li class="main_menu">EN</li>
+					<li class="main_menu">Account</li>
+				</ul>
 			</div>
-			<div class=""></div>
+		</header>
+
+		<div class="first_section">
+			<div class="before__section"> Headlines</div>
+			<div class="empty_space"></div>
+			<div class="view_all">View all</div>
 		</div>
 
-		<div class="section_opinion">
-			<img class="img_opinion" src="./assets/opinion_3.jpg" alt="">
-			<h2>How China's AI is automating the legal system</h2>
-			<div class="text_input_opinion">In China, many legal matters are in the hands of artificial intelligence. Although
-				it streamlines the process for small claims and misdemeanors, there are concerns about automating complicated
-				cases.</div>
-			<div class=""></div>
+		<div class="headlines">
+			<div class="headline__image"><img class="headline_photo" src="./assets/headlines2.jpg" alt="Headlines"></div>
+			<div class="all-news">
+				<a href="">The owner of the notorious Russian mercenary group says his forces have all but surrounded the
+					eastern Ukrainian city, but the defending troops are fighting on</a>
+				<span class="date"> 03/03/2023 </span>
+				<a href="">The missing answers from a US agency's 'lab leak' assessment on Covid origins</a>
+				<span class="date"> 03/03/2023 </span>
+				<a href="">Nobel laureate Ales Bialiatski sentenced to 10 years in prison by Belarusian court</a>
+				<span class="date"> 03/03/2023 </span>
+			</div>
 		</div>
-	</div>
 
-	<footer>
 
-		<img class="logo_footer" src="./assets/logo_transparent.png" alt="Logo">
+		<div class="second_section">
+			<div class="before__section"> Opinion</div>
+			<div class="empty_space"></div>
+			<div class="view_all">View all</div>
+		</div>
 
-		<div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis doloremque fuga eligendi vero explicabo dolorem
-			officiis officia vel quas. Repellat earum tempore enim ipsam consectetur sunt! Culpa qui provident quam.</div>
+		<div class="opinion">
+			<div class="section_opinion-1">
+				<img class="img_opinion" src="./assets/opinion_1.jpg" alt="">
+				<h2>Is the Global South paying for Germany's energy transition?</h2>
+				<div class="text_input_opinion">Germany needs to decarbonize its industry. It is betting on green hydrogen,
+					imported from countries with huge potential for renewable energies. But critics say Germany is going green at
+					the expense of the Global South.</div>
+				<p class="date"> 03/03/2023</p>
+				<div class=""></div>
+			</div>
 
-		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita mollitia totam praesentium assumenda
-			maxime explicabo nobis facere voluptates! Rerum velit nisi obcaecati blanditiis quidem cupiditate consequatur
-			inventore corrupti exercitationem.</div>
+			<div class="section_opinion-2">
+				<img class="img_opinion" src="./assets/opinion_2.jpg" alt="">
+				<h2>Colon cancer rising among young people</h2>
+				<div class="text_input_opinion">Colon cancer is generally thought to be a problem that affects older people. But
+					doctors are observing a steady increase in the number of cases among young adults. What's driving that trend?
+				</div>
+				<p class="date"> 03/03/2023</p>
+				<div class=""></div>
+			</div>
 
-	</footer>
+			<div class="section_opinion-3">
+				<img class="img_opinion" src="./assets/opinion_3.jpg" alt="">
+				<h2>How China's AI is automating the legal system</h2>
+				<div class="text_input_opinion">In China, many legal matters are in the hands of artificial intelligence.
+					Although it streamlines the process for small claims and misdemeanors, there are concerns about automating
+					complicated
+					cases.</div>
+				<p class="date"> 03/03/2023</p>
+				<div class=""></div>
+			</div>
+		</div>
 
+		<div class="third_section">
+			<div class="before__section"> Sport </div>
+			<div class="empty_space"></div>
+			<div class="view_all">View all</div>
+		</div>
+
+		<div class="sport_section">
+			<div class="sport_headlines">
+				<div class="main_headline">
+					<img class="img_sport" src="./assets/sport.jpg" alt="Sport">
+					<h4>Depression among athletes: When sport becomes a problem</h4>
+					<span>02/03/2023</span>
+				</div>
+				<div class="sport_news">
+					<a class="text_input_sport" href="">The Big One: How Australia came to dominate women's cricket</a>
+					<span>02/03/2023</span>
+					<a class="text_input_sport" href="">Germany's goalkeeper generation after Manuel Neuer and co.</a>
+					<span>02/03/2023</span>
+					<a class="text_input_sport" href="">Ukraine's Mahuchikh: 'The most difficult year of my life'</a>
+					<span>02/03/2023</span>
+					<a class="text_input_sport" href="">Champions League final 2022: Fans cleared but scars remain</a>
+					<span>02/03/2023</span>
+					<a class="text_input_sport" href="">Paris Olympics: Dissident Belarusians abandoned by IOC</a>
+					<span>02/03/2023</span>
+					<a class="text_input_sport" href="">Novak Djokovic: What his vaccination status means</a>
+					<span>02/03/2023</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="sign_up-section">
+			<p>All the day's headlines and highlights from the News, direct to you every morning</p>
+			<button class="sign_up-button"> Sign up for the News email </button>
+		</div>
+
+		<footer>
+			<div class="section_footer-1">
+				<img class="logo_footer" src="./assets/logo_transparent.png" alt="Logo">
+
+				<div class="section_footer">
+					<p>Subscribe</p>
+					<p>Contribute</p>
+				</div>
+			</div>
+
+			<div class="section_footer-2">
+				<div class="section_footer">
+					<p>Contact us</p>
+					<p>Complaints and corrections</p>
+					<p>SecureDrop</p>
+					<p>Work for us</p>
+				</div>
+
+				<div class="section_footer">
+					<p>Privacy settings</p>
+					<p>Privacy policy</p>
+					<p>Cookie policy</p>
+					<p>Terms & conditions</p>
+					<p>Help</p>
+					<p>Advertise with us</p>
+				</div>
+			</div>
+
+			<div class="section_footer-3">
+				<div class="section_footer">
+					<p>All topics</p>
+					<p>All writers</p>
+					<p>Digital newspaper archive</p>
+				</div>
+
+				<div class="section_footer">
+					<p>Facebook</p>
+					<p>YouTube</p>
+					<p>Instagram</p>
+					<p>LinkedIn</p>
+					<p>Twitter</p>
+					<p>Newsletter</p>
+				</div>
+
+				<div class="section_footer">
+					<p>Search UK jobs </p>
+				</div>
+			</div>
+
+		</footer>
+
+		<div class="copyright">
+			<p>© 2023 News & Media Limited or its affiliated companies. All rights reserved.</p>
+		</div>
 </body>
 
 </html>
+</div>
